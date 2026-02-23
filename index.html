@@ -249,17 +249,18 @@ What we do;
 Electric Vehicles (EVs): Providing clean, efficient electric vehicles for the African market and beyond.
 Tech for Sustainability: Providing smart, clean tech innovations that reduce carbon footprints and protect the planet.</p>
 
-<div class="counters">
 <div class="counter">
-<h3 data-target="5000 plus">0</h3>
+<h3 data-target="5000">0</h3>
 <p>Vehicles Targeted</p>
 </div>
+
 <div class="counter">
-<h3 data-target="5000 plus">0</h3>
+<h3 data-target="5000">0</h3>
 <p>Drivers to be Empowered</p>
 </div>
+
 <div class="counter">
-<h3 data-target="Accross Ghana">0</h3>
+<h3 data-target="16">0</h3>
 <p>Regions Planned</p>
 </div>
 </div>
@@ -352,7 +353,7 @@ const counterObserver = new IntersectionObserver(entries => {
           counter.innerText = Math.ceil(count + inc);
           setTimeout(updateCount, 15);
         } else {
-          counter.innerText = target;
+          counter.innerText = target + (counter.dataset.plus || '');
         }
       };
       updateCount();
