@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ekeng Ghana Limited | Electric Vehicles</title>
+<title>Ekeng Ghana Limited | Electric Vehicles for Commercial Drivers</title>
 
 <style>
 body{
@@ -180,6 +180,32 @@ section h2{
     margin:5px 0 0;
 }
 
+/* ================= VEHICLE CARDS ================= */
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.feature{
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.5);
+    transition:0.4s;
+}
+
+.feature:hover{
+    transform:translateY(-10px);
+}
+
+.feature img{
+    width:100%;
+    border-radius:10px;
+}
+
 /* ================= FOOTER ================= */
 footer{
     background:#000;
@@ -200,7 +226,6 @@ footer{
 <li><a href="#mission">Mission</a></li>
 <li><a href="#vision">Vision</a></li>
 <li><a href="#lease">Lease-to-Own</a></li>
-<li><a href="#solutions">Solutions</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
@@ -215,19 +240,26 @@ Learn More
 
 <section id="about">
 <h2>About Us</h2>
-<p>Driving Africa’s electric mobility transformation through sustainable innovation.</p>
+<p>Founded in 2020, is an African-owned holding company and the parent of Ekeng Technology—one of four subsidiaries under its umbrella. Over the years, the Group has established its footprint across the African continent, garnering strategic partnerships, cultivating long-term relationships, and securing the trust of clients both within and beyond Africa.
+Ekeng Technology is a future-focused technology company committed to harnessing digital innovation to address real-world challenges from clean energy to intelligent devices, our solutions are designed to elevate lifestyles, drive impact, and champion a greener planet.
+Rooted in purpose and powered by progress, Ekeng Technology is redefining what it means to be a modern African tech company—bold, sustainable, and built for the world.
+
+What we do;
+
+Electric Vehicles (EVs): Providing clean, efficient electric vehicles for the African market and beyond.
+Tech for Sustainability: Providing smart, clean tech innovations that reduce carbon footprints and protect the planet.</p>
 
 <div class="counters">
 <div class="counter">
-<h3 data-target="120">0</h3>
+<h3 data-target="5000+">0</h3>
 <p>Vehicles Targeted</p>
 </div>
 <div class="counter">
-<h3 data-target="300">0</h3>
-<p>Drivers Empowered</p>
+<h3 data-target="5000+">0</h3>
+<p>Drivers to be Empowered</p>
 </div>
 <div class="counter">
-<h3 data-target="5">0</h3>
+<h3 data-target="Accross Ghana">0</h3>
 <p>Regions Planned</p>
 </div>
 </div>
@@ -236,25 +268,55 @@ Learn More
 
 <section id="mission">
 <h2>Our Mission</h2>
-<p>Empowering communities and accelerating sustainable mobility adoption.</p>
+<p>Empowering communities and leading Africa’s transition into a digitally connected yet an environmentally conscious future through smart devices, clean energy, and transformative tech solutions.</p>
 </section>
 
 <section id="vision">
 <h2>Our Vision</h2>
-<p>To become Africa’s most trusted name in innovative tech solutions.</p>
+<p>To become Africa’s most trusted name in innovative and transformative tech solutions with an environmental conscience.</p>
+</section>
+
+<section id="lease">
+<h2>Lease-to-Own Program</h2>
+<p>Our lease-to-own contract is designed to keep commercial drivers on the driving seat of their earnings. 
+With our lease-to-own contracts, driver have a fixed term of up to three years to complete the payment for 
+the vehicle and payments are required weekly. This type of finance comes with comprehensive insurance, 
+charging allowance and mandatory monthly service. Drivers are not required to make a deposit payment 
+however; the option is open to drivers who wants to pay a deposit to help finish paying for the vehicle 
+earlier.</p>
+</section>
+
+<section id="vehicles">
+<h2>Our Electric Vehicles</h2>
+<div class="features">
+<div class="feature">
+<img src="https://raw.githubusercontent.com/Ekengghana/ekengghana.github.io/main/BYD%20Sealion.webp" alt="BYD Sealion EV">
+<h3>BYD Sealion EV</h3>
+</div>
+<div class="feature">
+<img src="https://raw.githubusercontent.com/Ekengghana/ekengghana.github.io/main/BYD%20Sealion%20interior.webp" alt="BYD Sealion Interior">
+<h3>Interior View</h3>
+</div>
+<div class="feature">
+<img src="https://raw.githubusercontent.com/Ekengghana/ekengghana.github.io/main/BYD%20Sealion%20back%20view.jpg" alt="BYD Sealion Back">
+<h3>Back View</h3>
+</div>
+</div>
 </section>
 
 <section id="contact">
 <h2>Contact Us</h2>
+<p>Ekeng Ghana Limited</p>
+<p>KF 37 KOFFEKROM Ext, GAUSU EXTENSION, OBUASI - ADANSI, Ghana</p>
 <p>Email: ekengltd@gmail.com</p>
+<p>Phone: +233 322 499 941 / +233 509 624 856</p>
 </section>
 
 <footer>
-<p>&copy; 2026 Ekeng Ghana Limited. All Rights Reserved.</p>
+<p>&copy; 2025 Ekeng Ghana Limited. All Rights Reserved.</p>
 </footer>
 
 <script>
-
 /* Scroll Progress */
 window.onscroll = function() {
   let winScroll = document.documentElement.scrollTop;
@@ -300,7 +362,6 @@ const counterObserver = new IntersectionObserver(entries => {
 },{threshold:0.5});
 
 counters.forEach(counter => counterObserver.observe(counter));
-
 </script>
 
 </body>
